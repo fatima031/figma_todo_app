@@ -63,7 +63,7 @@ class page1_view extends StatelessWidget {
           Center(
             child: Container(
               height: 50,
-              child: Expanded(
+              child: Container(
                 child: Text(
                   "You Can easily Manage All Of Your Daily Tasks In DoMe For Free",
                   style: TextStyle(

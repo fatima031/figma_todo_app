@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:todoapp/index.dart';
 import 'package:todoapp/login.dart';
+import 'package:todoapp/profile.dart';
 import 'package:todoapp/welcome.dart';
 
 class register_view extends StatelessWidget {
@@ -40,7 +41,7 @@ class register_view extends StatelessWidget {
                     children: [
                       Container(
                         alignment: Alignment.topLeft,
-                        child: Text(
+                        child: const Text(
                           "Register",
                           style: TextStyle(
                               fontSize: 30,
@@ -55,7 +56,7 @@ class register_view extends StatelessWidget {
                         // alignment: Alignment.topLeft,
                         color: Colors.blueGrey,
 
-                        child: Column(
+                        child: const Column(
                           // mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -85,7 +86,7 @@ class register_view extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        child: Column(
+                        child: const Column(
                           // mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -116,7 +117,7 @@ class register_view extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        child: Column(
+                        child: const Column(
                           // mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -170,7 +171,7 @@ class register_view extends StatelessWidget {
                       ),
                       Container(
                         child: ElevatedButton(
-                            style: ButtonStyle(
+                            style: const ButtonStyle(
                                 padding: MaterialStatePropertyAll(
                                     EdgeInsets.only(left: 75, right: 75))),
                             onPressed: () {},
@@ -198,6 +199,7 @@ class register_view extends StatelessWidget {
                                   MaterialPageRoute(
                                       builder: (context) => login_view()));
                             },
+                          
                             child: Text("Already have an account? Login")),
                       )
                     ],
